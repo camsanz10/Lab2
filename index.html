@@ -7,60 +7,73 @@
 </head>
 <body>
 
-    <header>
-        <h1>Camila Sánchez</h1>
-        <h2>Desarrolladora Web en Proceso</h2>
-    </header>
+    <div>
+        
+        <header>
+            <h1>Camila Sánchez</h1>
+            <h2>Desarrolladora Web en Proceso</h2>
+        </header>
 
-    <main>
-        <section>
-            <h3>Historia Mágica Profesional</h3>
-            <p>Soy un apasionada del desarrollo web, con habilidades para crear experiencias interactivas. Me encanta programar y aprender nuevas tecnologías.</p>
-        </section>
-
-        <section>
-            <h3>Habilidades Mágicas</h3>
+        <nav>
             <ul>
-                <li>HTML y CSS</li>
-                <li>JavaScript</li>
-                <li>UX Design</li>
+                <li><a href="#historia">Historia</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#retrato">Retrato</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </section>
+        </nav>
 
-        <section>
-            <h3>Retrato Encantador</h3>
-            <img src="smiling-beautiful-young-woman-standing-posing.jpg" alt="Foto profesional">
-        </section>
+        <main>
+            <article id="historia">
+                <h3>Historia Mágica Profesional</h3>
+                <p>Soy un apasionada del desarrollo web, con habilidades para crear experiencias interactivas. Me encanta programar y aprender nuevas tecnologías.</p>
+            </article>
 
-        <section>
-            <h3>Hechizo de Conexión Social</h3>
-            <a href="https://www.linkedin.com/in/maria-camila-s%C3%A1nchez-vivas-b98158226/" target="_blank">Visita mi LinkedIn</a>
-        </section>
+            <section id="habilidades">
+                <h3>Habilidades Mágicas</h3>
+                <ul>
+                    <li>HTML y CSS</li>
+                    <li>JavaScript</li>
+                    <li>UX Design</li>
+                </ul>
+            </section>
 
-        <section>
-            <h3>Formulario de Recomendaciones</h3>
-            <form action="/procesar" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <section id="retrato">
+                <h3>Retrato Encantador</h3>
+                <img src="smiling-beautiful-young-woman-standing-posing.jpg" alt="Foto profesional">
+            </section>
 
-                <label for="comentario">Comentario:</label>
-                <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea>
+            <section id="contacto">
+                <h3>Hechizo de Conexión Social</h3>
+                <a href="https://www.linkedin.com/in/maria-camila-s%C3%A1nchez-vivas-b98158226/" target="_blank">Visita mi LinkedIn</a>
+            </section>
 
-                <label for="pais">País:</label>
-                <select id="pais" name="pais">
-                    <option value="CO">Colombia</option>
-                    <option value="MX">México</option>
-                    <option value="ES">España</option>
-                </select>
+            <article>
+                <h3>Formulario de Recomendaciones</h3>
+                <form action="/procesar" method="POST">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
 
-                <button type="submit">Enviar</button>
-            </form>
-        </section>
-    </main>
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" rows="4" cols="50" required></textarea>
 
-    <footer>
-        <p>© 2025 - Camila Sánchez</p>
-    </footer>
+                    <label for="pais">País:</label>
+                    <select id="pais" name="pais">
+                        <option value="CO">Colombia</option>
+                        <option value="MX">México</option>
+                        <option value="ES">España</option>
+                    </select>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </article>
+        </main>
+
+        <footer>
+            <p>© 2025 - Camila Sánchez</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
